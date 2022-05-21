@@ -1,5 +1,5 @@
 
-import { getDescription } from "./api"
+import { getDescription } from "../services/api"
 import { useEffect, useState } from 'react';
 
 export const Description = ({sign,timeframe}) => {
