@@ -1,16 +1,16 @@
-// import { useEffect, useState } from 'react';
 
 export const SelectDay = ({ onTimeframeSelected }) => {
   return (
     <div>
         <h2> Select Timeframe </h2>
-            {['yesterday','today','tomorrow'].map((timeframes) => (
+            {['yesterday','today','tomorrow'].map((timeframe) => (
                 <button 
-                key={timeframes} 
-                onClick={ () => onTimeframeSelected(timeframes) }
+                key={timeframe} 
+                onClick={ () => onTimeframeSelected(timeframe) }
                 >
-                {timeframes}</button>
+                {timeframe}</button>
             ))}
+            
     </div>
     
   )

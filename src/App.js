@@ -1,7 +1,7 @@
 import {  useState } from 'react';
 import './App.css';
-import { Horoscope } from './components/Horoscope';
-import {SelectDay} from './components/SelectDay';
+import { Description } from './components/Description';
+import { SelectDay } from './components/SelectDay';
 import { SelectedSign } from './components/SelectedSign';
 
 
@@ -26,8 +26,8 @@ function App() {
         <SelectDay onTimeframeSelected={setSelectedTimeframe} />
       )}
       {selectedSign && selectedTimeframe && (
-        <Horoscope 
-        data={selectedSign}
+        <Description 
+        sign={selectedSign}
         timeframe={selectedTimeframe}
         />
       )}

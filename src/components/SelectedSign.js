@@ -1,19 +1,23 @@
-import { getData } from "../services/api"
-import { useEffect, useState } from 'react';
-
-export const SelectedSign = ({ onSignSelected }) => {
-    const [data, setData] = useState([])
-
-    useEffect( () => {
-        getData().then(setData) 
-            },[]);
-
+export const SelectedSign = ({ onSignSelected }) => {  
+    
   return (
     <div>
-        <h2> Select Sign </h2>
-            {data.map((sign) => (
+      <h2> Select Your Sign </h2>                 
+            {[  'aries',
+                'taurus',
+                'gemini',
+                'cancer',
+                'leo',
+                'virgo',
+                'libra',
+                'scorpio',
+                'sagittarius',
+                'capricorn',
+                'aquarius',
+                'pisces'].map((sign) => (
                 <button 
-                key={sign} 
+                key={sign}
+                value={sign} 
                 onClick={ () => onSignSelected(sign) }
                 >
                 {sign}</button>
