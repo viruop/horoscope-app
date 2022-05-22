@@ -1,9 +1,8 @@
 
-export const getDescription = (sign,timeframe) =>{
-          fetch(`https://aztro.sameerkumar.website/?sign=${sign}&day=${timeframe}`, {
+export const getDescription = async (sign,timeframe) =>{
+         let data = await fetch(`https://aztro.sameerkumar.website/?sign=${sign}&day=${timeframe}`, {
           "method": "POST",
-        }).then(res => res.json())
-        .then(json => console.log(json))
-        .then(({description}) => description );
+        }).then(res => res.json());
+        return data;
       }
 
