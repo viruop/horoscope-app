@@ -12,7 +12,6 @@ export const Description = ({sign,timeframe}) => {
     const [dateRange , setDateRange] =useState([]);
     useEffect( () => {
     getDescription(sign,timeframe).then((data) =>{
-      console.log(data)
       setDescription(data.description);
       setLuckyNumber(data.lucky_number);
       setColor(data.color);
