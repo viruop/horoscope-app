@@ -22,7 +22,7 @@ export const Description = ({sign,timeframe}) => {
         <p> <span> Compatibility : </span>{global.compatibility}</p>
         <p> <span> Lucky Time : </span>{global.lucky_time} </p>
         <p> <span> Mood : </span>{global.mood} </p>
-      </div>:"It's loading"}
+      </div>:"It's loading.."}
   </div>
   </>
   )
