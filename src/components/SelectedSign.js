@@ -1,8 +1,10 @@
+import "../button.css"
 export const SelectedSign = ({ onSignSelected }) => {  
     
   return (
     <div>
-      <h2> Select Your Sign </h2>                 
+      <h2> Select Your <span className="sign"> Sign</span> </h2>
+      <div className="grid">                 
             {[  'aries',
                 'taurus',
                 'gemini',
@@ -16,12 +18,13 @@ export const SelectedSign = ({ onSignSelected }) => {
                 'aquarius',
                 'pisces'].map((sign) => (
                 <button 
+                className="button-56"
                 key={sign}
                 value={sign} 
                 onClick={ () => onSignSelected(sign) }
                 >
                 {sign}</button>
-            ))}
+            ))}</div>
     </div>
   )
 }

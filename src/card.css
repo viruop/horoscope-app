@@ -1,0 +1,18 @@
+.card{
+    background-color:  #fee6e3;
+    /* margin: 10px; */
+    color: black;
+    width: auto;
+    text-align: start;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    height: auto;
+    margin: 2rem;
+    border-radius: 10px;
+}
+span{
+    font-weight: 600;
+    font-size: large;
+}

@@ -7,6 +7,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
   color: white;
+  background-image: url("../public/starfall-gif-46.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
 
 code {
